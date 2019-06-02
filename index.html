@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"/>
+        <title>Pizzerito - Пицерито</title>
+        
+        <style>
+            body
+            {
+                background-color: #2a2a2a;
+                text-align: center;
+                font-family: "Comfortaa", cursive;
+                color: #e36930;
+                margin: 0 auto;
+            }
+
+            .navbar
+            {
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                background: rgba(51, 51, 51, 0.9);
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+            }
+
+            .navbar .logo
+            {
+                position: relative;
+                top: -4px;
+                left: 15px;
+                width: 220px;
+                height: 50px;
+                background: url("./img/logsaz.png") no-repeat;
+                background-size: contain;
+            }
+
+            .navbar .mSauce
+            {
+                position: relative;
+                top: -60px;
+                left: 400px;
+                width: 50px;
+                height: 50px;
+                background: url(./img/saouce3.svg) no-repeat;
+                background-size: 33px 33px;
+            }
+            .navbar .mSauce:hover
+            {
+                /*filter: invert(0.34) sepia(1) saturate(3.8) hue-rotate(360deg) brightness(1.2);
+                color: rgba(105, 78, 29, 0.9);*/
+                filter: invert(0.5);
+            }
+
+            .navbar .mSauce p
+            {
+                position: relative;
+                top: 33px;
+                left: -10px;
+                color: rgba(231, 231, 231, 0.9);
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .navbar .mPizza
+            {
+                position: relative;
+                top: -130px;
+                left: 460px;
+                width: 50px;
+                height: 50px;
+                background: url(./img/pizza3.svg) no-repeat;
+                background-size: 40px 40px;
+            }
+            .navbar .mPizza:hover
+            {
+                /*filter: invert(0.34) sepia(1) saturate(3.8) hue-rotate(360deg) brightness(1.2);
+                color: rgba(105, 78, 29, 0.9);*/
+                filter: invert(0.5);
+                
+            }
+            .navbar .mPizza p
+            {
+                position: relative;
+                top: 39px;
+                left: -10px;
+                color: rgba(231, 231, 231, 0.9);
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .navbar .mGrill
+            {
+                position: relative;
+                top: -187px;
+                left: 528px;
+                width: 50px;
+                height: 50px;
+                background: url(./img/grill2.svg) no-repeat;
+                background-size: 33px 33px;
+            }
+            .navbar .mGrill:hover
+            {
+                /*filter: invert(0.34) sepia(1) saturate(3.8) hue-rotate(360deg) brightness(1.2);
+                color: rgba(105, 78, 29, 0.9);*/
+                filter: invert(0.5);
+            }
+            .navbar .mGrill p
+            {
+                position: relative;
+                top: 33px;
+                left: -10px;
+                color: rgba(231, 231, 231, 0.9);
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .navbar .mSalad
+            {
+                position: relative;
+                top: -249px;
+                left: 602px;
+                width: 50px;
+                height: 50px;
+                background: url(./img/salad2.svg) no-repeat;
+                background-size: 33px 33px;
+            }
+            .navbar .mSalad:hover
+            {
+                /*filter: invert(0.34) sepia(1) saturate(3.8) hue-rotate(360deg) brightness(1.2);
+                color: rgba(105, 78, 29, 0.9);*/
+                filter: invert(0.5);
+            }
+            .navbar .mSalad p
+            {
+                position: relative;
+                top: 33px;
+                left: -10px;
+                color: rgba(231, 231, 231, 0.9);
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .navbar .mDrink
+            {
+                position: relative;
+                top: -312px;
+                left: 687px;
+                width: 50px;
+                height: 50px;
+                background: url(./img/drink2.svg) no-repeat;
+                background-size: 33px 33px;
+            }
+            .navbar .mDrink:hover
+            {
+                /*filter: invert(0.34) sepia(1) saturate(3.8) hue-rotate(360deg) brightness(1.2);
+                color: rgba(105, 78, 29, 0.9);*/
+                filter: invert(0.5);
+            }
+            .navbar .mDrink p
+            {
+                position: relative;
+                top: 33px;
+                left: -10px;
+                color: rgba(231, 231, 231, 0.9);
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .navbar .mDessert
+            {
+                position: relative;
+                top: -376px;
+                left: 780px;
+                width: 50px;
+                height: 50px;
+                background: url(./img/dessert2.svg) no-repeat;
+                background-size: 33px 33px;
+            }
+            .navbar .mDessert:hover
+            {
+                /*filter: invert(0.34) sepia(1) saturate(3.8) hue-rotate(360deg) brightness(1.2);
+                color: rgba(105, 78, 29, 0.9);*/
+                filter: invert(0.5);
+            }
+            .navbar .mDessert p
+            {
+                position: relative;
+                top: 33px;
+                left: -13px;
+                color: rgba(231, 231, 231, 0.9);
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            .container
+            {
+                padding-top: 80px;
+            }
+            .container .mItem
+            {
+                position: absolute;
+                top: 80px;
+                left: 40px;
+                width: 240px;
+                height: 320px;
+                border: 1px solid rgba(51, 51, 51, 0.9);
+                border-radius: 5px;
+                color: rgba(158, 158, 158, 0.9);
+                text-shadow: 2px 2px #000000;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+            }
+            .container .mItem:hover
+            {
+                background: rgba(51, 51, 51, 0.9);
+                color: rgba(231, 231, 231, 0.9);
+                border: 1px solid rgba(32, 32, 32, 0.9);
+                text-shadow: 2px 2px #000000;
+            }
+            .container .mItem .iName
+            {
+                /*color: rgba(209, 187, 12, 0.9);*/
+                color: rgba(255, 166, 0, 0.9);
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .container .mItem .iImage
+            {
+                top: 10px;
+                margin-left: 45px;
+                width: 150px;
+                height: 150px;
+                background: url(./img/demo/margarita.png) no-repeat;
+                background-size: 150px 150px;
+            }
+            .container .mItem .iInfo
+            {
+                font-size: 13px;
+            }
+            .container .mItem .iRate:nth-child(1n)
+            {
+                margin-top: -36px;
+                margin-left: 83px;
+                width: 20px;
+                height: 20px;
+                background: url(./img/rate.png) no-repeat;
+                background-size: 20px 20px;
+            }
+            .container .mItem .iRate:nth-child(2n)
+            {
+                margin-top: 43px;
+                margin-left: 104px;
+                width: 20px;
+                height: 20px;
+                background: url(./img/rate.png) no-repeat;
+                background-size: 20px 20px;
+            }
+            .container .mItem .iRate:nth-child(3n)
+            {
+                margin-top: -36px;
+                margin-left: 125px;
+                width: 20px;
+                height: 20px;
+                background: url(./img/rate.png) no-repeat;
+                background-size: 20px 20px;
+            }
+            .container .mItem .iPrice
+            {
+                position: absolute;
+                font-size: 16px;
+                margin-top: -64px;
+                margin-left: 62px;
+                color: #e36930;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="mSauce"><p>Сосове</p></div>
+            <div class="mPizza"><p>Пици</p></div>
+            <div class="mGrill"><p>Скара</p></div>
+            <div class="mSalad"><p>Салати</p></div>
+            <div class="mDrink"><p>Напитки</p></div>
+            <div class="mDessert"><p>Десерти</p></div>
+        </div>
+        <div class="container">
+        <!--
+            <img src="http://pizzerito.com/image/data/logsaz.png"/>
+            <h2>Сайтът е в разработка. Очаквайте скоро</h2>
+            <img width="70" height="70" src="http://www.pizzerito.com/loading.gif"/>
+            <p>Посетете ни - София, ул. "Васил Калчев" 10</p>
+        -->
+        <div class="mItem">
+            <p class="iName">Маргарита</p>
+            <p class="iImage"></p>
+            <p class="iInfo">
+                Кашкавал - 100г.<br>
+                Доматена салца - 60г.
+            </p>
+            <p class="iRate"></p>
+            <p class="iRate"></p>
+            <p class="iRate"></p>
+            <p class="iPrice">Цена - 9.00лв</p>
+        </div>
+        </div>
+    </body>
+</html>
