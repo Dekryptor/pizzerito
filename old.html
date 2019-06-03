@@ -15,19 +15,6 @@
                 color: #e36930;
                 margin: 0 auto;
             }
-            .bg
-            {
-                z-index: 1;
-                position: absolute;
-                top: 200px;
-                left: 400px;
-                width: 550px;
-                height: 300px;
-                opacity: 0.1;
-                filter: alpha(opacity=50); /* For IE8 and earlier */
-                background: url(./img/logsaz.png) no-repeat;
-                background-size: 550px 300px;
-            }
 
             .navbar
             {
@@ -206,35 +193,16 @@
                 font-size: 13px;
                 font-weight: bold;
             }
-            .navbar .uLogo
-            {
-                position: absolute;
-                top: 7px;
-                margin-left: 1234px;
-                border: 1px solid rgba(190, 190, 190, 0.9);
-                border-radius: 50%;
-                width: 35px;
-                height: 35px;
-                background: url(./img/avatar.png) no-repeat;
-                background-size: 35px 35px;
-                box-shadow: 1px 0px 12px 0px rgba(0, 0, 0, 0.9);
-            }
 
             .container
             {
-                display: flex;
-                flex-wrap: wrap;
                 padding-top: 80px;
-                width: 97%;
-                height: 500px;
             }
             .container .mItem
             {
-                margin-left: 5px;
-                margin-top: 5px;
-                position: relative;
-                top: -10px;
-                left: 22px;
+                position: absolute;
+                top: 80px;
+                left: 40px;
                 width: 240px;
                 height: 320px;
                 border: 1px solid rgba(51, 51, 51, 0.9);
@@ -242,7 +210,6 @@
                 color: rgba(158, 158, 158, 0.9);
                 text-shadow: 2px 2px #000000;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
-                overflow: hidden;
             }
             .container .mItem:hover
             {
@@ -306,58 +273,9 @@
                 margin-left: 62px;
                 color: #e36930;
             }
-            .container .mItem .iClassicSize
-            {
-                position: absolute;
-                font-size: 16px;
-                margin-top: -64px;
-                margin-left: 62px;
-                color: #e36930;
-            }
-            .container .mItem .iClassicSize
-            {
-                position: absolute;
-                top: 83px;
-                left: -67px;
-                width: 53px;
-                border: 1px solid rgba(242, 70, 0, 0.7);
-                border-radius: 7px;
-                font-size: 14px;
-                font-weight: bold;
-                font-family: sans-serif;
-                color: #000;
-                background: #e3d130;
-                text-shadow: 0 0 40px #000, 0 0 60px #000;
-            }
-            .container .mItem .iClassicSize:hover
-            {
-                color: rgba(51, 51, 51, 0.9);
-                background: rgba(209, 187, 12, 0.9);
-            }
-            .container .mItem .iFamilySize
-            {
-                position: absolute;
-                top: 25px;
-                left: -4px;
-                width: 53px;
-                border: 1px solid rgba(242, 70, 0, 0.7);
-                border-radius: 7px;
-                font-size: 14px;
-                font-weight: bold;
-                font-family: sans-serif;
-                color: #000;
-                background: #e3d130;
-                text-shadow: 0 0 40px #000, 0 0 60px #000;
-            }
-            .container .mItem .iFamilySize:hover
-            {
-                color: rgba(51, 51, 51, 0.9);
-                background: rgba(209, 187, 12, 0.9);
-            }
         </style>
     </head>
     <body>
-        <div class="bg"></div>
         <div class="navbar">
             <div class="logo"></div>
             <div class="mSauce"><p>Сосове</p></div>
@@ -366,7 +284,6 @@
             <div class="mSalad"><p>Салати</p></div>
             <div class="mDrink"><p>Напитки</p></div>
             <div class="mDessert"><p>Десерти</p></div>
-            <div class="uLogo"></div>
         </div>
         <div class="container">
         <!--
@@ -375,20 +292,18 @@
             <img width="70" height="70" src="http://www.pizzerito.com/loading.gif"/>
             <p>Посетете ни - София, ул. "Васил Калчев" 10</p>
         -->
-            <div class="mItem">
-                <p class="iName">Маргарита</p>
-                <p class="iImage"></p>
-                <p class="iInfo">
-                    Кашкавал - 100г.<br>
-                    Доматена салца - 60г.
-                </p>
-                <p class="iRate"></p>
-                <p class="iRate"></p>
-                <p class="iRate"></p>
-                <p class="iPrice">Цена - 9.00лв</p>
-                <p class="iClassicSize">30см</p>
-                <p class="iFamilySize">50см</p>
-            </div>
+        <div class="mItem">
+            <p class="iName">Маргарита</p>
+            <p class="iImage"></p>
+            <p class="iInfo">
+                Кашкавал - 100г.<br>
+                Доматена салца - 60г.
+            </p>
+            <p class="iRate"></p>
+            <p class="iRate"></p>
+            <p class="iRate"></p>
+            <p class="iPrice">Цена - 9.00лв</p>
+        </div>
         </div>
     </body>
 </html>
